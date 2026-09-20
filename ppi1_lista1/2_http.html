@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo HTTP</title>
+    <style>
+            img{height: 200px;}
+    </style>
+</head>
+<body>
+
+```
+<h1>Protocolo HTTP</h1>
+<h2>O que é HTTP?</h2>
+
+<p>
+    HTTP significa <strong>Hypertext Transfer Protocol</strong>.
+    É um protocolo utilizado para a comunicação entre o navegador
+    (cliente) e os servidores na Web.
+</p>
+
+<p>
+    Quando acessamos um site, o navegador envia uma
+    <strong>requisição (request)</strong> para o servidor. O servidor
+    processa a solicitação e envia uma <strong>resposta (response)</strong>.
+</p>
+    <img id="exe1" src="https://images.openai.com/static-rsc-4/PH0W88WZjFKXiO_Gea3OgwptcDoz1StqS0aQFYcWh7_eR9OePdtqzsJYC2oXICY9yPBITM9lbXplzHWPCCaqN7U4TObpKNL7xBMJF5wPty4nFdZ4p1oCjGxVfkF1Ey1TquhdC9r9qrmem_d0mi2cHqZdA3LBNMQ_WmgOv9q4I1UrnyhCB0HDT_fT9GjCkhXm?purpose=fullsize" alt="exemplo HTTP">
+    </div>
+
+<h2>Exemplo de Request</h2>
+
+GET /index.html HTTP/1.1
+Host: [www.exemplo.com](http://www.exemplo.com)
+User-Agent: Mozilla/5.0
+Accept: text/html </pre>
+
+```
+<p>
+    <strong>GET:</strong> solicita uma informação ao servidor.<br>
+    <strong>Host:</strong> informa o endereço do servidor.<br>
+    <strong>User-Agent:</strong> identifica o navegador utilizado.<br>
+    <strong>Accept:</strong> informa o tipo de conteúdo aceito.
+</p>
+
+<h2>Exemplo de Response</h2>
+
+<pre>
+
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 1250
+
+<html>
+<body>
+<h1>Olá, mundo!</h1>
+</body>
+</html> </pre>
+
+<p>
+    <strong>200 OK:</strong> significa que a requisição foi realizada
+    com sucesso.<br>
+    <strong>Content-Type:</strong> informa o tipo do conteúdo enviado.<br>
+    <strong>Content-Length:</strong> informa o tamanho do conteúdo.
+</p>
+
+<h2>Captura de uma requisição</h2>
+
+<p>
+    Para visualizar uma requisição HTTP, podemos abrir as ferramentas
+    de desenvolvedor do navegador pressionando <strong>F12</strong>
+    e acessar a aba <strong>Network (Rede)</strong>.
+</p>
+
+<p>Ao acessar uma página, podemos observar informações como:</p>
+
+<ul>
+    <li>Método utilizado, como GET ou POST;</li>
+    <li>URL acessada;</li>
+    <li>Headers da requisição;</li>
+    <li>Headers da resposta;</li>
+    <li>Código de status;</li>
+    <li>Conteúdo enviado ou recebido.</li>
+</ul>
+
+<h2>Principais códigos HTTP</h2>
+
+<ul>
+    <li><strong>200</strong> - Requisição realizada com sucesso.</li>
+    <li><strong>201</strong> - Recurso criado.</li>
+    <li><strong>400</strong> - Requisição inválida.</li>
+    <li><strong>401</strong> - Autenticação necessária.</li>
+    <li><strong>403</strong> - Acesso proibido.</li>
+    <li><strong>404</strong> - Página ou recurso não encontrado.</li>
+    <li><strong>500</strong> - Erro interno do servidor.</li>
+</ul>
+
+<h2>Conclusão</h2>
+
+<p>
+    O HTTP é fundamental para o funcionamento da Web, pois permite
+    que navegadores e servidores troquem informações. Através das
+    requisições e respostas, é possível acessar páginas, enviar dados,
+    carregar imagens, vídeos e utilizar aplicações Web.
+</p>
+
+</body>
+</html>
