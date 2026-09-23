@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>   
+   <title>Exemplo especificidade de seletores</title>
+   <style>
+      /*regra 1*/ li{color:red;}                                <!--aplica a cor vermelha aos itens sem classe-->
+      /*regra 2*/ .churras{color:green;}                        <!--aplica a cor verde aos itens da classe churras-->
+      /*regra 3*/ .fruta{color:gray}                            <!--aplica a cor cinza aos itens da classe fruta-->
+      /*regra 4*/ li+li.churras{color: black;}                  <!--essa regra é mais específica e afeta elementos li seguidos de outro li que sejam classe churras-->
+      /*regra 5*/ .churras[draggable="true"]{color: magenta;}   <!--regra aplica a cor magenta elementos que podem ser arrastados-->
+      /*regra 6*/ #lip1,#lip2,#lip3{color:blue}                 <!--itens com essas ids ficam azuis-->
+      /*regra 7*/ #lip3.fruta{color:orange}                     <!--aplica a cor laranja ao item com a id lip3 e classe fruta-->
+      /*regra 8*/ ol>li.churras#lip5{color:purple}              <!--inão se aplica, pois não há li filhos de ol com a id lip5-->         
+   </style>
+</head>
+<body>   
+   <ol>
+   <!--item 1--> <li id="lip0">Abacaxi</li>                                         
+   <!--item 2--> <li           class="fruta">Melão</li>                             
+   <!--item 3--> <li id="lip2" class="fruta">Pera</li>                              
+   <!--item 4--> <li id="lip3" class="fruta">Uva</li>                               
+   <!--item 5--> <li id="lip4" class="fruta">Maçã</li>                             
+   <!--item 6--> <li           class="churras">Carne</li>                           
+   <!--item 7--> <li           class="churras">Linguiça</li>                        
+   <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho</li>    
+   </ol>   
+</body>
+</html>

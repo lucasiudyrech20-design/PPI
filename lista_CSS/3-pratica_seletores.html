@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS</title>
+    <style>
+        body{background-color: gray;}
+        h1{font-size: 2.5dvw;}
+        p{color: green;
+        font-variant: small-caps;}
+        p#t1{color: aqua;
+        font-family: georgia;}
+
+        p#t3{color: red;
+        font-family: 'Franklin Gothic Medium';}
+
+        p#t4{color: purple;
+        font-family:'Times New Roman';}
+
+        p#t5{color: yellow;
+        font-size: 0.8dvw;
+        font-family: Verdana;}
+
+        span{font-size: 1.5dvw;
+        font-style: impact;}
+        span#s2{font-style: italic;}
+    </style>
+</head>
+<body>
+    <h1>Lorem Ipsum</h1>
+    <p id="t1">Lorem Ipsum</p>
+    <p id="t2">Lorem <span>Ipsum</span></p>
+    <p id="t3"><span id="s2">Lorem</span> Ipsum</p>
+    <p id="t4">Lorem <span>Ipsum</span></p>
+    <p id="t5">Lorem Ipsum</p>
+</body>
+</html>
