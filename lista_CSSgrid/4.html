@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  @media screen and (min-width: 600px) {
+.page{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "laside banner raside"
+    "laside main raside"
+    "laside low raside"
+    "footer footer footer";
+    height: 100vh;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+}
+
+  @media screen and (max-width: 599px) {
+.page{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+
+    .box{
+    border: 6px solid white;
+    height: 12%;
+}
+#main{height: 40%;}
+}
+}
+
+.box{
+    border: 5px solid white;
+}
+#header{grid-area: header;
+    background-color: brown;}
+
+#laside{grid-area: laside;
+    background-color: blueviolet;}
+
+#banner{grid-area: banner;
+background-color: red;}
+
+#main{grid-area: main;
+    background-color: orange;}
+
+#raside{grid-area: raside;
+    background-color: green;}
+
+#low{grid-area: low;
+    background-color: cyan;}
+
+#footer{grid-area: footer;
+    background-color: gray;}
+
+</style>
+
+</head>
+<body>
+    <div class="page">
+        <div class="box" id="header">header</div>
+        <div class="box" id="laside">laside</div>
+        <div class="box" id="banner">banner</div>
+        <div class="box" id="main">main</div>
+        <div class="box" id="raside">raside</div>
+        <div class="box" id="low">loe</div>
+        <div class="box" id="footer">footer</div>
+    </div>
+    
+</body>
+</html>
