@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+body{display: grid;
+grid-template-areas: 
+"Header Header"
+"Nav Contente"
+"Nav Footer";
+
+grid-template-columns: 25% 75%;
+grid-template-rows: 20% 60% 20%;
+}
+Header{grid-area: Header;
+border: 1px solid black;}
+Nav{grid-area: Nav;}
+Contente{grid-area: Contente;}
+Footer{grid-area: Footer;}
+
+</style>
+
+</head>
+<body>
+<div id="page">
+  <header>Header</header>
+  <Nav>Navigation</Nav>
+  <Contente>Contente</Contente>
+  <footer>Footer</footer>
+</div>
+
+    
+</body>
+</html>

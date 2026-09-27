@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{border: 1px solid black;
-        height: 25dvh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        body{display: flex;}
+
+        .box{
+            border: 1px solid black;
+            width: 25dvh;
+            height: 25dvh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
         }
+        
         #box1{background-color: blue;}
         #box2{background-color: green;}
         #box3{background-color: red;}
         #box4{background-color: yellow;}
 
-
     </style>
-
 </head>
 <body>
 
@@ -26,6 +30,6 @@
     <div id="box2" class="box">box2</div>
     <div id="box3" class="box">box3</div>
     <div id="box4" class="box">box4</div>
-
+    
 </body>
 </html>
