@@ -6,13 +6,122 @@
     <title>Document</title>
 
 <style>
-body{display: flex;}
+
+     *{
+    margin: 0px;
+    padding: 0px;
+  }
+.page{
+grid-template-areas: 
+"laside apre"
+"laside main";
+
+    display: grid;
+    height: 100vh;
+    
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 25% 75%;
+}
+.cont{border: 2px solid black;}
+
+.laside{grid-area: laside;
+background-color: rgb(36, 40, 65);
+position: relative;
+height: 100vh;
+justify-content: left;}
+
+.value{
+color: white;
+margin: 16px;
+padding: 8px;}
+
+.apre{grid-area: apre;}
+
+.sent{
+margin: 8px;
+padding: 8px;}
+.main{grid-area: main;}
+
+.main{
+margin: 8px;
+padding: 8px;}
+.content{
+display: flex;
+justify-content: space-between;
+align-items: center;}
+.comp{margin: 8px;
+padding: 8px;}
+
+.content h3 {
+    margin: 0;
+}
+.content span {
+    font-size: 14px;
+}
 
 
 </style>
 
 </head>
 <body>
+    <div class="page">
+        <div class="laside">
+            <img src="" alt="foto de lucas">
+
+            <div class="value">
+                <h2>Pessoal</h2>
+                <hr> <br>
+            <p><strong>Nome</strong>
+            <br>Lucas Iudy Rech</p>
+            <br>
+            <p><strong>Endereço</strong>
+            <br>Rua Romilda Goedert, 48
+            <br>89128-000, SC</p>
+            <br>
+            <p><strong>Número de telefone</strong>
+            <br>47997641520</p>
+            <br>
+            <p><strong>Email</strong>
+            <br>Lucasiudyrech20@gmail.com</p>
+                <br>
+            <h2>Interesses</h2>
+            <hr>
+            <ul>
+                <li>Rock</li>
+                <li>Leitura</li>
+            </ul>
+            </div>
+
+        </div>
+        <div class="apre">
+            <div class="sent">
+
+            <h1><strong>Lucas Iudy Rech</strong></h1>
+            <hr><br>
+            <p>Estudante de ensino médio técnico em informática, encerrando o curso este ano e estou a procura de experiência na área, a grade curricular envolve Java, Git, mySQL, Unity, HTML, CSS e C#.  Estou desenvolvendo um jogo de Projeto Integrador de curso, responsável por design e coordenação do projeto. Pretendo seguir curso em Ciência da Computação, visando a UFSC Blumenau. </p>
+
+        </div>
+        </div>
+
+        <div class="main">
+            <h2><strong>Experiência profissional</strong></h2>
+            <br><hr><br>
+            <div class="content">
+                <h3>ELENGE engenharia </h3> 
+                <span>2024-atual</span>
+            </div>
+                
+                <div class="comp">
+                    <ul>
+                    <li>Desenvolvimento de projetos executivos e detalhamento técnico em ZWCAD, com foco em sistemas de segurança.</li>
+                    <li>Compatibilização de projetos e integração entre disciplinas técnicas, garantindo precisão e conformidade executiva.</li>
+                    <li>Elaboração de memoriais descritivos e listas de materiais.</li>
+                    <li>Suporte técnico às equipes de execução, assegurando alinhamento entre projeto e campo.</li>
+                </ul>
+                </div>
+            
+        </div>
+    </div>
     
 </body>
 </html>
